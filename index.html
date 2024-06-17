@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <title>☀️ Sunny Side Up - Weather app</title>
+  </head>
+  <body>
+    <header class="logo">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/084/original/sunny_side_up_logo.png?1716305702"
+        alt="Sunny Side Up Weather App"
+        width="200"
+      />
+    </header>
+    <div class="app">
+      <header class="lookup">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Name a city, any city"
+            required
+            id="search-input"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 id="current-city">Cheltenham</h1>
+            <p>
+              <span id="current-date-time"></span>
+              , Moderate Rain <br />
+              Humidity: <span>87%</span>, Wind: <span>7.2km/h</span>
+            </p>
+          </div>
+          <div class="current-temperature" id="complete-current-weather">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="forecast-1">
+            <div>Sat</div>
+            <div>☀️</div>
+            <span class="high"> 22°C </span>
+            <span class="low"> - 8°C </span>
+          </div>
+          <div class="forecast-2">
+            <div>Sun</div>
+            <div>🌥</div>
+            <span class="high"> 22°C </span>
+            <span class="low"> - 8°C </span>
+          </div>
+          <div class="forecast-3">
+            <div>Mon</div>
+            <div>🌤</div>
+            <span class="high"> 22°C </span>
+            <span class="low"> - 8°C </span>
+          </div>
+          <div class="forecast-4">
+            <div>Tues</div>
+            <div>🌦</div>
+            <span class="high"> 22°C </span>
+            <span class="low"> -8°C </span>
+          </div>
+
+          <div class="forecast-5">
+            <div>Wed</div>
+            <div>🌧</div>
+            <span class="high"> 22°C </span>
+            <span class="low"> -8°C </span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Kaitlyn Burke</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/script.js"></script>
+</html>
